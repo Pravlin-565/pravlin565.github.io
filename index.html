@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Westbury Hotel</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Your Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        /* Video Background Styling */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Keeps the video behind other content */
+            overflow: hidden;
+        }
+
+        #bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the video fills the screen */
+            object-position: center center; /* Centers the video */
+        }
+
+        /* Optionally, you can adjust opacity or blending effect */
+        .hero, .section {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="hai.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="logo">Westbury</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#view">View</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Westbury</h1>
+            <p>Experience Ultimate Luxury and Comfort</p>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section">
+        <h2>Our Rooms</h2>
+        <div class="rooms-container">
+
+            <!-- DELUXE ROOM with Swiper -->
+            <div class="room-card">
+                <div class="swiper deluxeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="scenic-view2.jpg" alt="Deluxe View 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="scenic-view3.jpg" alt="Deluxe View 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="scenic-view4.jpg" alt="Deluxe View 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="scenic-view5.jpg" alt="Deluxe View 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="scenic-view6.jpg" alt="Deluxe View 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="scenic-view7.jpg" alt="Deluxe View 3">
+                        </div>  
+                    </div>
+                    <!-- Swiper buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h3>Deluxe Room</h3>
+                <p>Elegant comfort with a city view.</p>
+            </div>
+
+            <!-- EXECUTIVE SUITE -->
+            <div class="room-card">
+                <div class="swiper deluxeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="sce1.jpg" alt="Executive View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="sce2.jpg" alt="Executive View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="sce3.jpg" alt="Executive View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="sce4.jpg" alt="Executive View">
+                        </div>
+                    </div>
+                 <!-- Swiper buttons -->
+                 <div class="swiper-button-next"></div>
+                 <div class="swiper-button-prev"></div>
+             </div>
+                <h3>Executive Suite</h3>
+                <p>Luxury suite with private balcony.</p>
+            </div>
+
+            <!-- PRESIDENTIAL SUITE -->
+            <div class="room-card">
+                <div class="swiper deluxeSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="mass(1).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(2).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(3).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(4).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(5).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(6).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(7).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(8).jpeg" alt="Presidential View">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="mass(9).jpeg" alt="Presidential View">
+                        </div>
+                    </div>
+                    <!-- Swiper buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <h3>Presidential Suite</h3>
+                <p>Ultimate luxury with exclusive services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Section -->
+    <section id="view" class="section">
+        <h2>Our Views</h2>
+        <div class="view-gallery">
+            <div class="swiper deluxeSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="view (1).jpeg" alt="Presidential View">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="view (3).jpeg" alt="Presidential View">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="view (4).jpeg" alt="Presidential View">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="view (5).jpeg" alt="Presidential View">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="view (6).jpeg" alt="Presidential View">
+                    </div>
+        </div>
+        <!-- Swiper buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>📍 123 Luxury Street, Beverly Hills, CA</p>
+            <p>📞 +1 638 105 5021</p>
+            <p>✉️ Pravlin565@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Westbury Hotel. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var deluxeSwiper = new Swiper('.deluxeSwiper', {
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 3000, // Auto-slide every 3 seconds
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+</body>
+</html>
